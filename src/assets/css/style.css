@@ -1,0 +1,78 @@
+.bg-black-alt  {
+  background:#191919;
+}
+.text-black-alt  {
+  color:#191919;
+}
+.border-black-alt {
+  border-color: #191919;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #2d3748;
+}
+
+body{
+  background-color: #191919;
+}
+
+
+#data {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#data:hover {
+  -webkit-filter: contrast(1.1);
+  filter: contrast(1.1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.loading{
+  text-align: center;
+}
+
+.loading:after {
+  content: ' .';
+  animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;
+    }
+  }
+
+  #version {
+    position: fixed;
+    bottom: 1em;
+    right: 15px;
+    border-radius: 50px;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.15);
+  }
